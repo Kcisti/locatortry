@@ -1,0 +1,22 @@
+*{
+  font-family: 'Encode Sans SC', sans-serif;
+}
+.body{
+  background-color: #000000;
+  overflow: auto;
+}
+.body::-webkit-scrollbar{
+  width: 0px;
+}
+
+#status{
+  color: #00FF00;
+  font-size: 55px;
+  cursor: progress;
+}
+#map-link{
+  color: #00FF00;
+  font-size: 65px;
+  text-decoration: none;
+  cursor: pointer;
+}
