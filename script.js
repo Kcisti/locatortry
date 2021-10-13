@@ -21,12 +21,15 @@ function geoFindMe() {
     status.textContent = 'ERROR: POSITION NOT FOUND';
   }
 
-  jQuery.get("https://ipregistry.co", function (data){
-    console.log("COUNTRY:" + data.country);
-    console.log("IP ADRESS:" + data.ip);
-      const country = data.country;
-      const ip = data.ip;
-      document.getElementById("country").textContent = `COUNTRY: ${country}`;
-      document.getElementById("ip").textContent = `IP: ${ip}`;
-  },"jsonp")
+  jQuery.get('http://www.geoplugin.net/json.gp', function(data){
+    console.log(JSON.stringify(data,null,2));
+    var ipadress = data.geoplugin_request;
+    var city = data.geoplugin_city;
+    var region = data.geoplugin_region;
+    var country = data.geoplugin_countryName;
+    var continent = data.geoplugin_continentName;
+    document.getElementById("ip").textContent = `IP: ${ipadress}`;
+    document.getElementById("country").textContent = `COUNTRY: ${continent}, ${country}`;
+    document.getElementById("region&city").textContent = `PLACE: ${region}, ${city}`;
+  })
 }
