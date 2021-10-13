@@ -1,5 +1,5 @@
 *{
-  font-family: 'Encode Sans SC', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .body{
   background-color: #000000;
@@ -9,14 +9,22 @@
   width: 0px;
 }
 
+#content{
+  border: 1px solid #00FF00;
+  text-align: center;
+  width: fit-content;
+  margin-top: 200px;
+}
 #status{
   color: #00FF00;
-  font-size: 55px;
+  font-size: 60px;
   cursor: progress;
+  padding: 25px;
 }
-#map-link{
+.coords{
   color: #00FF00;
-  font-size: 65px;
+  font-size: 60px;
   text-decoration: none;
   cursor: pointer;
+  padding: 25px;
 }

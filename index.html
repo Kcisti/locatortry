@@ -8,13 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body class="body" onload="geoFindMe()">
-    <center><div>
+    <center><div id="content">
       <p id = "status"></p>
-      <a id = "map-link" target="_blank"></a>
+      <a class="coords" id="latitude"></a></br>
+      <a class="coords" id="longitude"></a></br>
+      <a class="coords" id="country"></a></br>
+      <a class="coords" id="ip"></a></br>
     </div></center>
   </body>
 
