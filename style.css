@@ -17,13 +17,13 @@
 }
 #status{
   color: #00FF00;
-  font-size: 28px;
+  font-size: 35px;
   cursor: progress;
   padding: 5px;
 }
 .coords{
   color: #00FF00;
-  font-size: 28px;
+  font-size: 35px;
   text-decoration: none;
   cursor: pointer;
   padding: 5px;
