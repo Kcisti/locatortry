@@ -21,15 +21,24 @@ function geoFindMe() {
     status.textContent = 'ERROR: POSITION NOT FOUND';
   }
 
-  jQuery.get('http://www.geoplugin.net/json.gp', function(data){
+
+
+  jQuery.get('https://api.ipdata.co/?api-key=07dc406357116374356d47dede913d40d6a808b446efaf858c4907d6', function(data){
     console.log(JSON.stringify(data,null,2));
-    var ipadress = data.geoplugin_request;
-    var city = data.geoplugin_city;
-    var region = data.geoplugin_region;
-    var country = data.geoplugin_countryName;
-    var continent = data.geoplugin_continentName;
+    var callcode = data.calling_code;
+    var Isp = data.asn.name;
+    var emojy = data.emoji_flag;
+    var ipadress = data.ip;
+    var country = data.country_name;
+    var continent = data.continent_name;
+    var currency = data.currency.code;
+
+    document.getElementById("currency").textContent = `CURRENCY: ${currency}`;
+    document.getElementById("emoji").textContent = `COUNTRY EMOJI: ${emojy}`;
+    document.getElementById("callcode").textContent = `CALLING CODE: +${callcode}`;
+    document.getElementById("isp").textContent = `ISP: ${Isp}`;
     document.getElementById("ip").textContent = `IP: ${ipadress}`;
-    document.getElementById("country").textContent = `COUNTRY: ${continent}, ${country}`;
-    document.getElementById("region&city").textContent = `PLACE: ${region}, ${city}`;
+    document.getElementById("country").textContent = `COUNTRY:  ${continent}, ${country}`;
   })
+
 }

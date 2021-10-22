@@ -2,7 +2,7 @@
   font-family: 'Roboto', sans-serif;
 }
 .body{
-  background-color: #000000;
+  background-color: #151515;
   overflow: auto;
 }
 .body::-webkit-scrollbar{
@@ -11,20 +11,20 @@
 
 #content{
   border: 1px solid #00FF00;
-  text-align: center;
+  text-align: left;
   width: fit-content;
   margin-top: 200px;
 }
 #status{
   color: #00FF00;
-  font-size: 60px;
+  font-size: 20px;
   cursor: progress;
-  padding: 25px;
+  padding: 5px;
 }
 .coords{
   color: #00FF00;
-  font-size: 60px;
+  font-size: 20px;
   text-decoration: none;
   cursor: pointer;
-  padding: 25px;
+  padding: 5px;
 }
