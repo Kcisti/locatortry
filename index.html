@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon"/>
-    <title></title>
+    <title>Users Locator</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mobile.css"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
-  <body class="body" onload="geoFindMe()">
-    <center><div id="content">
-      <a class="coords" id="ip"></a></br>
-      <a class="coords" id="country"></a></br>
-      <a class="coords" id="currency"></a></br>
-      <a class="coords" id="emoji"></a></br>
-      <a class="coords" id="callcode"></a></br>
-      <a class="coords" id="isp"></a></br>
-      <p id = "status"></p>
-      <a class="coords" id="latitude"></a></br>
-      <a class="coords" id="longitude"></a></br>
-    </div></center>
+  <body class="body">
+    <div class="head_menu">
+      <p class="head_menu_name">Users Locator</p> 
+      <img class="head_menu_logo" src="logo/logo.svg">
+    </div>
+    <div class="back">
+      <div class="start">
+        <p class="start_text">Users Locator is a precise geolocation 
+          system with which you can find any device quickly
+          from your browser
+        </p>
+        <button class="start_button">search</button>
+      </div>
+      <div class="content" id="content">
+        <a class="coords" id="ip"></a></br>
+        <a class="coords" id="isp"></a></br>
+        <a class="coords" id="country"></a></br>
+        <a class="coords" id="currency"></a></br>
+        <a class="coords" id="place"></a></br>
+        <a class="coords" id="callcode"></a></br>
+        <a class="coords" id="emoji"></a></br>
+        <a class="coords" id="tor"></a></br>
+        <a class="coords" id="proxy"></a></br>
+        <p id = "status"></p>
+        <a class="coords" id="latitude"></a></br>
+        <a class="coords" id="longitude"></a></br>
+      </div>
+    </div>
   </body>
 
   <script src="script.js"></script>
